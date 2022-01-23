@@ -190,7 +190,7 @@ class Railway{
         System.out.println("Your Ticket details!!..");
         for(int i=0;i<history.size();i++){
             if(uid.equals(history.get(i).uid)){
-                System.out.println(history.get(i).name+"  "+history.get(i).uid+"  "+history.get(i).start+"  "+history.get(i).depart+"  "+history.get(i).seat+"  Ticket ID : "+history.get(i).tid);
+                System.out.printf("%-10s %-5s %-13s %-13s %-2d Ticket ID: %s \n",history.get(i).name,history.get(i).uid,history.get(i).start,history.get(i).depart,history.get(i).seat,history.get(i).tid);
             } 
         }
         System.out.print("Enter the ticket id : ");
@@ -254,7 +254,7 @@ class Railway{
         System.out.println("Your travelling history : ");
         for(int i=0;i<history.size();i++){
             if(uid.equals(history.get(i).uid)){
-                System.out.println(history.get(i).name+"  "+history.get(i).uid+"  "+history.get(i).start+"  "+history.get(i).depart+"  "+history.get(i).seat+"  "+history.get(i).tid);
+                System.out.printf("%-10s %-5s %-13s %-13s %-2d Ticket ID:%s \n",history.get(i).name,history.get(i).uid,history.get(i).start,history.get(i).depart,history.get(i).seat,history.get(i).tid);
             }
         }
 
@@ -265,7 +265,7 @@ class Railway{
         }
         else{
             for(int i=0;i<waiting.size();i++){
-                System.out.println(waiting.get(i).name+"  "+waiting.get(i).uid+" "+waiting.get(i).start+"  "+waiting.get(i).depart);
+                System.out.printf("%-10s %-5s %-13s %s  \n",waiting.get(i).name,waiting.get(i).uid,waiting.get(i).start,waiting.get(i).depart);
             }
         }   
     }
